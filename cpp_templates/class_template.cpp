@@ -30,14 +30,14 @@
 */
 
 #include<iostream>
-
+using namespace std;
 template<class demo>
-class max{
+class Max{
     demo a,b;
     public:
-        max(){} 
+        Max(){} 
 
-        max(demo a, demo b){
+        Max(demo a, demo b){
             this->a = a;
             this->b = b;
         }
@@ -49,8 +49,12 @@ class max{
 
 int main(){
     // max <int>o1(2,3);
-    max o1(2,3);
+    int a,b;
+    cout<<"Enter"<<endl;
+    cin>>a>>b;
+
+    Max o1(a,b);
     
-    std::cout<<"Max = "<<o1.getMax()<<std::endl;
+    cout<<"Max = "<<o1.getMax()<<std::endl;
     return 0;
 }
